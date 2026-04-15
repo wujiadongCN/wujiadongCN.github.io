@@ -1,18 +1,72 @@
-# Change baseurl before deploy
 baseurl = "https://wujiadongcn.github.io"
 title = "正在进行时 doing!!!"
-languageCode = "en-us"
-
-# Theme i18n support
-# See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
+languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage = true
-
-# Change it to your Disqus shortname before using
-disqusShortname = "hugo-theme-stack"
+disqusShortname = ""
 
 [pagination]
     pagerSize = 5
+
+[params]
+    mainSections = ["post"]
+    featuredImageField = "image"
+    rssFullContent = true
+    favicon = ""
+
+    [params.footer]
+        since = 2024
+        customText = ""
+
+    [params.dateFormat]
+        published = "2006-01-02"
+        lastUpdated = "2006-01-02 15:04 MST"
+
+    [params.sidebar]
+        emoji = "🍥"
+        subtitle = "你好 世界"
+        avatar.enabled = true
+        avatar.local = true
+        avatar.src = ""
+
+    [params.article]
+        math = false
+        toc = true
+        readingTime = true
+        license.enabled = false
+
+    [params.comments]
+        enabled = false
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/"
+        weight = 1
+        [menu.main.params]
+            icon = "home"
+
+    [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives/"
+        weight = 2
+        [menu.main.params]
+            icon = "archives"
+
+    [[menu.main]]
+        identifier = "search"
+        name = "搜索"
+        url = "/search/"
+        weight = 3
+        [menu.main.params]
+            icon = "search"
+
+    [[menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about/"
+        weight = 4
+        [menu.main.params]
+            icon = "user"
