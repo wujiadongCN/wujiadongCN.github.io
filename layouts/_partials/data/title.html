@@ -1,0 +1,17 @@
+{{- $pageTitle := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $paginator := partial "helper/paginator.html" . -}}
+
+{{- if eq .Kind "404" -}}
+    {{- $pageTitle = T "notFound.title" -}}
+{{- end -}}
+
+{{- $title := slice -}}
+
+{{- if and $paginator $paginator.HasPrev -}}
+    {{- $title = $title | append (printf "第 %d 页" $paginator.PageNumber) -}}
+{{- end -}}
+
+{{- $title = $title | append (default $siteTitle $pageTitle) -}}
+
+{{- return delimit $title " - " -}}

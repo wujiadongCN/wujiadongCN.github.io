@@ -1,8 +1,9 @@
 baseurl = "https://wujiadongcn.github.io"
-title = "正在进行时 doing!!!"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
+title = "正在进行时！！！"
+locale = "zh-CN"
+defaultContentLanguage = "zh"
 hasCJKLanguage = true
+timeZone = "Asia/Shanghai"
 disqusShortname = ""
 
 [pagination]
@@ -19,12 +20,12 @@ disqusShortname = ""
         customText = ""
 
     [params.dateFormat]
-        published = "2006-01-02"
-        lastUpdated = "2006-01-02 15:04 MST"
+        published = "2006年1月2日"
+        lastUpdated = "2006年1月2日 15:04"
 
     [params.sidebar]
         emoji = "🍥"
-        subtitle = "你好 世界"
+        subtitle = "你好，世界"
         avatar.enabled = true
         avatar.local = true
         avatar.src = ""

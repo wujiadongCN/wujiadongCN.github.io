@@ -10,16 +10,16 @@ favicon        = "img/favicon.png"
 SortBy              = "default"
 
 [footer]
-    since      = 2020
+    since      = 2024
     customText = ""
 
 [dateFormat]
-    published   = ":date_full"
-    lastUpdated = ":date_full"
+    published   = "2006年1月2日"
+    lastUpdated = "2006年1月2日 15:04"
 
 [sidebar]
     emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle = "你好，世界"
     avatar   = "img/avatar.png"
 
 [article]
@@ -28,8 +28,8 @@ SortBy              = "default"
     readingTime   = true
 
     [article.license]
-        enabled = true
-        default = "Licensed under CC BY-NC-SA 4.0"
+        enabled = false
+        default = "本文采用 CC BY-NC-SA 4.0 许可协议"
 
 [widgets]
     homepage = [
@@ -40,17 +40,13 @@ SortBy              = "default"
     ]
     page = [{ type = "toc" }]
 
-[opengraph.twitter]
-    site = ""
-    card = "summary_large_image"
-
 [colorScheme]
     toggle  = true
     default = "auto"
 
 ## Comments
 [comments]
-    enabled  = true
+    enabled  = false
     provider = "disqus"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml

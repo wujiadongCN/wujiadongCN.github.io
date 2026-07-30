@@ -1,4 +1,4 @@
-# Configure main menu and social menu
+# 社交链接
 #[[main]]
 #identifier = "home"
 #name = "Home"
@@ -9,16 +9,8 @@
 
 [[social]]
     identifier = "github"
-    name       = "GitHub"
-    url        = "https://github.com/CaiJimmy/hugo-theme-stack"
+    name       = "我的 GitHub"
+    url        = "https://github.com/wujiadongCN"
 
     [social.params]
         icon = "brand-github"
-
-[[social]]
-    identifier = "twitter"
-    name       = "Twitter"
-    url        = "https://twitter.com"
-
-    [social.params]
-        icon = "brand-twitter"

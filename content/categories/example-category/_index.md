@@ -1,9 +1,9 @@
 ---
-title: Example Category
-description: A description of this category
+title: 示例分类
+description: 示例分类说明
 image:
 
-# Badge style
+# 标签样式
 style:
     background: "#2a9d8f"
     color: "#fff"
